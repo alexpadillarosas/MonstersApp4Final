@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancelar</string>
+    <string name="app_name">MonstersApp3Final</string>
+    <string name="hello_blank_fragment">Hola Fragmento Blanco</string>
+    <string name="add">Anadir</string>
+    <string name="scariness">miedo</string>
+    <string name="add_a_short_description">anade una corta descripcion</string>
+    <string name="type_your_monster_s_name">escribe el nombre de tu monstruo</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/showMonstersFragment">
+
+<!--   -->
+
+    <fragment
+        android:id="@+id/showMonstersFragment"
+        android:name="com.blueradix.monstersapp4final.monster.show.ShowMonstersFragment"
+        android:label="show_monsters_fragment"
+        tools:layout="@layout/show_monsters_fragment" >
+        <action
+            android:id="@+id/action_showMonstersFragment_to_addMonsterScrollingFragment"
+            app:destination="@id/addMonsterScrollingFragment" />
+        <action
+            android:id="@+id/action_showMonstersFragment_to_rateMonsterScrollingFragment"
+            app:destination="@id/rateMonsterScrollingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMonsterScrollingFragment"
+        android:name="com.blueradix.monstersapp4final.monster.add.AddMonsterScrollingFragment"
+        android:label="fragment_add_monster_scrolling"
+        tools:layout="@layout/add_monster_scrolling_fragment" >
+        <action
+            android:id="@+id/action_addMonsterScrollingFragment_to_showMonstersFragment"
+            app:destination="@id/showMonstersFragment"
+            app:popUpTo="@id/showMonstersFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/rateMonsterScrollingFragment"
+        android:name="com.blueradix.monstersapp4final.monster.rate.RateMonsterScrollingFragment"
+        android:label="rate_monster_scrolling_fragment"
+        tools:layout="@layout/rate_monster_scrolling_fragment" >
+        <action
+            android:id="@+id/action_rateMonsterScrollingFragment_to_showMonstersFragment"
+            app:destination="@id/showMonstersFragment"
+            app:popUpTo="@id/showMonstersFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
